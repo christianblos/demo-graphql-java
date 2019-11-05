@@ -1,0 +1,8 @@
+type Player {
+    id: ID!
+    nickname: String!
+}
+
+type Query {
+    currentPlayer: Player
+}
