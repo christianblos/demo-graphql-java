@@ -7,9 +7,11 @@ type Player {
 type Alliance {
     id: ID!
     name: String!
+    players: [Player!]!
 }
 
 type Query {
     currentPlayer: Player
     player(playerId: ID!): Player
+    alliances: [Alliance!]!
 }

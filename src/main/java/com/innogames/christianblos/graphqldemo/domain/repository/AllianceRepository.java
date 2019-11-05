@@ -18,6 +18,10 @@ public class AllianceRepository {
 		);
 	}
 
+	public List<Alliance> findAll() {
+		return alliances;
+	}
+
 	public Alliance findById(int id) {
 		return alliances.stream()
 			.filter(alliance -> alliance.getId() == id)

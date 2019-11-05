@@ -15,4 +15,8 @@ public class Player {
 
 	private Integer allianceId;
 
+	public boolean isInAlliance(int allianceId) {
+		return this.allianceId != null && this.allianceId == allianceId;
+	}
+
 }
