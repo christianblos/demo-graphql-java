@@ -1,0 +1,11 @@
+type Player {
+    id: ID!
+    nickname: String!
+    alliance: Alliance
+}
+
+type Alliance {
+    id: ID!
+    name: String!
+    players: [Player!]!
+}

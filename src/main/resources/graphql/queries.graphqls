@@ -1,0 +1,5 @@
+type Query {
+    currentPlayer: Player
+    player(playerId: ID!): Player
+    alliances: [Alliance!]!
+}

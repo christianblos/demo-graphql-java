@@ -1,0 +1,4 @@
+type Mutation {
+    renameAlliance(allianceId: ID!, newName: String!): Alliance
+    switchAlliance(playerId: ID!, newAllianceId: ID): Player
+}
