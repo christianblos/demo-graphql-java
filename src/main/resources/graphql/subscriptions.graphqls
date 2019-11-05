@@ -1,0 +1,7 @@
+type PingResponse {
+    number: Int!
+}
+
+type Subscription {
+    ping: PingResponse
+}
