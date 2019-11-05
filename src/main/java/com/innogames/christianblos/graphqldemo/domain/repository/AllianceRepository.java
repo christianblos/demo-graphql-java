@@ -29,4 +29,14 @@ public class AllianceRepository {
 			.orElse(null);
 	}
 
+	public Alliance renameAlliance(int allianceId, String newName) {
+		for (Alliance alliance : alliances) {
+			if (alliance.getId() == allianceId) {
+				alliance.setName(newName);
+				return alliance;
+			}
+		}
+		return null;
+	}
+
 }

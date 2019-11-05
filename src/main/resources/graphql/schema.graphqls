@@ -15,3 +15,7 @@ type Query {
     player(playerId: ID!): Player
     alliances: [Alliance!]!
 }
+
+type Mutation {
+    renameAlliance(allianceId: ID!, newName: String!): Alliance
+}
