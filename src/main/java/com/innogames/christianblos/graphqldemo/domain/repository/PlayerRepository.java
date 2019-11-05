@@ -33,4 +33,14 @@ public class PlayerRepository {
 			.collect(Collectors.toList());
 	}
 
+	public Player switchAlliance(int playerId, Integer allianceId) {
+		for (Player player : players) {
+			if (player.getId() == playerId) {
+				player.setAllianceId(allianceId);
+				return player;
+			}
+		}
+		return null;
+	}
+
 }
