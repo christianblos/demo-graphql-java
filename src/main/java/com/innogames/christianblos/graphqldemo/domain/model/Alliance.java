@@ -7,12 +7,10 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Player {
+public class Alliance {
 
 	private final int id;
 
-	private String nickname;
-
-	private Integer allianceId;
+	private String name;
 
 }

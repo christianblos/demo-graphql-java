@@ -13,9 +13,9 @@ public class PlayerRepository {
 
 	public PlayerRepository() {
 		players = List.of(
-			new Player(1, "PlayerOne"),
-			new Player(2, "PlayerTwo"),
-			new Player(3, "PlayerThree")
+			new Player(1, "PlayerOne", 11),
+			new Player(2, "PlayerTwo", 22),
+			new Player(3, "PlayerThree", null)
 		);
 	}
 
