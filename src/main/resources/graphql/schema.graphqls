@@ -5,4 +5,5 @@ type Player {
 
 type Query {
     currentPlayer: Player
+    player(playerId: ID!): Player
 }

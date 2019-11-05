@@ -19,4 +19,8 @@ public class QueryResolver implements GraphQLQueryResolver {
 		return playerRepository.findById(1);
 	}
 
+	public Player player(int playerId) {
+		return playerRepository.findById(playerId);
+	}
+
 }
